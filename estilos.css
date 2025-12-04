@@ -1,0 +1,96 @@
+/* estilos.css - diseño simple y responsive para el proyecto */
+:root{
+  --verde-oscuro:#2d6a4f;
+  --verde-medio:#40916c;
+  --fondo:#f7f7f7;
+  --texto:#222;
+  --claro:#e9fff2;
+  --radio:8px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  padding:0;
+  background:var(--fondo);
+  color:var(--texto);
+  line-height:1.5;
+}
+
+header{
+  background:var(--verde-oscuro);
+  color:white;
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+header h1{margin:0; font-size:18px}
+nav a{
+  color:var(--claro);
+  text-decoration:none;
+  margin-left:8px;
+  font-size:14px;
+}
+
+main{
+  padding:20px;
+  max-width:900px;
+  margin:18px auto;
+  background:white;
+  border-radius:10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+h1{font-size:20px; margin-top:0}
+h2{font-size:18px}
+p{margin:12px 0}
+
+footer{
+  padding:14px;
+  text-align:center;
+  margin:18px;
+}
+
+.boton{
+  display:inline-block;
+  padding:10px 16px;
+  background:var(--verde-medio);
+  color:white;
+  text-decoration:none;
+  border-radius:var(--radio);
+  font-weight:600;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+/* Botones de navegación secundaria (anterior/siguiente) */
+.nav-row{
+  display:flex;
+  gap:12px;
+  justify-content:space-between;
+  margin-top:18px;
+}
+
+/* Formularios */
+form{max-width:720px; margin:0 auto}
+label{display:block; margin-bottom:10px}
+input[type="text"], input[type="email"], textarea{
+  width:100%; padding:10px; border-radius:6px; border:1px solid #ccc;
+}
+
+button[type="submit"]{
+  padding:10px 16px; border:none; border-radius:8px; background:var(--verde-oscuro); color:white;
+  font-weight:600; cursor:pointer;
+}
+
+/* Responsive */
+@media (max-width:600px){
+  header{padding:12px}
+  main{margin:12px; padding:14px}
+  header h1{font-size:16px}
+  nav a{font-size:13px}
+}
