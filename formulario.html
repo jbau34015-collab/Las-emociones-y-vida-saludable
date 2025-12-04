@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario de evaluación</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<h1>Formulario de evaluación</h1>
+
+<form action="https://formspree.io/f/mvgerwno" method="POST">
+
+  <!-- CALIFICACIÓN -->
+  <label>Calificación de la página:</label><br>
+  <select name="calificacion" required>
+    <option value="Excelente">Excelente ⭐⭐⭐⭐⭐</option>
+    <option value="Muy buena">Muy buena ⭐⭐⭐⭐</option>
+    <option value="Buena">Buena ⭐⭐⭐</option>
+    <option value="Regular">Regular ⭐⭐</option>
+    <option value="Mala">Mala ⭐</option>
+  </select>
+  <br><br>
+
+  <!-- COMENTARIO -->
+  <label>Comentario:</label><br>
+  <textarea name="comentario" rows="5" required></textarea>
+  <br><br>
+
+  <!-- CORREO DEL USUARIO -->
+  <label>Tu correo (opcional):</label><br>
+  <input type="email" name="email">
+  <br><br>
+
+  <button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
