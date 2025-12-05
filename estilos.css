@@ -16,7 +16,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.4); /* Cambia transparencia 0.1 - 1 */
+    background: rgba(255, 255, 255, 0.1); /* Cambia transparencia 0.1 - 1 */
     z-index: -1; /* Mantiene la capa detrás del contenido */
 }
 
